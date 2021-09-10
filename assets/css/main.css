@@ -127,6 +127,7 @@ th,
 td,
 textarea {
   font-size: 14px;
+  font-weight: 400;
   color: #4C4C4C;
   background: transparent;
   font-family: 'Noto Sans KR', 'Noto Sans SC', "Apple SD Gothic Neo", sans-serif;
@@ -252,8 +253,18 @@ br {
   font-family: 'Dotum';
 }/* IE에서 br 태그 깨지는 문제 해결 */
 
+/* default style reset */
 
-
+input[type="file"] {
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  clip:rect(0,0,0,0);
+  border: 0;
+}
 
 
 /* ----- common css ----- */
@@ -283,15 +294,7 @@ br {
   -webkit-box-orient: vertical;
 }/* 두 줄 이상 */
 
-.mt40 {
-  margin-top: 40px;
-}
-
-.mb15 {
-  margin-bottom: 15px;
-}
-
-/* button */
+/* --- button --- */
 
 button[class^=btn_] {
   display: inline-block;
@@ -304,13 +307,6 @@ button[class^=btn_] {
   transition: all 0.2s ease;
   font-size: 12px;
   font-weight: 700;
-}
-
-.wrap_btn {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-  padding: 20px 0;
 }
 
 .wrap_button {
@@ -332,7 +328,14 @@ button[class^=btn_] {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
+}/* 전체 화면에서 가운데 정렬되는 버튼 */
+
+.wrap_button_type2 {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+}/* 테이블 밑에 붙는 버튼 */
 
 .btn_comm {
   position: absolute;
@@ -351,7 +354,7 @@ button[class^=btn_] {
   line-height: 15px;
   color: #FFF;
   background-color: #4C4C4C;
-}
+}/* 로그인 이전 화면에서 쓰이는 버튼 */
 .btn_submit:hover {
   background-color: #0070C0;
 }
@@ -415,7 +418,7 @@ button[class^=btn_] {
   box-sizing: border-box;
   color: #FFF;
   background-color: #0070C0;
-}
+}/* + 버튼 */
 
 .btn_save,
 .btn_cancel {
@@ -442,12 +445,14 @@ button[class^=btn_] {
   line-height: 26px;
   color:#4C4C4C;
   background-color: #FFF;
-}
+}/* 검색 버튼 */
 .btn_srch:hover {
   border: 1px solid #0070C0;
   color: #FFF;
   background-color: #0070C0;
 }
+
+/* pagination button */
 
 .btn_prev,
 .btn_next {
@@ -460,7 +465,7 @@ button[class^=btn_] {
   margin-right: 10px;
 }
 
-/* images */
+/* --- images --- */
 
 img.img_thumb{
   display: block;
@@ -468,21 +473,12 @@ img.img_thumb{
   height: auto;
 }
 
-/* icon */
+/* --- icon --- */
 
 .ico_comm {
   display: inline-block;
   font-size: 14px;
   color: #4C4C4C;
-}
-
-.ico_complete {
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
-  text-align: center;
-  font-size: 60px;
-  color: #0070C0;
 }
 
 .ico_arrow {
@@ -493,7 +489,7 @@ img.img_thumb{
   margin-top: -4px;
   font-size: 18px;
   color: #4C4C4C;
-}
+}/* aside 영역 리스트 아이콘 */
 
 .ico_setting {
   float: right;
@@ -501,7 +497,7 @@ img.img_thumb{
   height: 16px;
   margin: 2px 0 0 10px;
   background: url(../images/ico_setting.png) center top no-repeat;
-}
+}/* header 영역 > user */
 
 .ico_dash {
   margin: 0 5px;
@@ -518,7 +514,13 @@ img.img_thumb{
   color: #333;
 }
 
-/* text */
+.ico_answer {
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+/* --- text --- */
 
 .tit_logo {
   display: inline-block;
@@ -534,31 +536,6 @@ img.img_thumb{
   padding: 0 0 50px;
   font-size: 28px;
   font-weight: 700;
-  color: #7F7F7F;
-}
-
-.tit_snb {
-  display: inline-block;
-  width: 100%;
-  padding: 20px;
-  font-weight: 700;
-  text-align: center;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.tit_section {
-  display: inline-block;
-  padding: 0 0 15px;
-  font-size: 20px;
-}
-
-.tit_subtitle {
-  display: inline-block;
-  margin: 0 0 15px 0;
-  padding: 0 10px;
-  font-size: 18px;
   color: #555;
 }
 
@@ -567,15 +544,7 @@ img.img_thumb{
   font-size: 14px;
   font-weight: 400;
   color: #0070C0;
-}
-
-.txt_dsc {
-  display: block;
-  font-size: 14px;
-  line-height: 2;
-  font-weight: 400;
-  color: #555;
-}
+}/* 로그인 페이지의 계정등록/ChangePassword */
 
 .txt_assist {
   display: block;
@@ -584,7 +553,7 @@ img.img_thumb{
   margin: 15px;
   font-size: 12px;
   color: #999;
-}
+}/* 로그인 페이지 */
 
 .txt_warn {
   display: inline-block;
@@ -592,7 +561,38 @@ img.img_thumb{
   font-size: 14px;
   font-weight: 700;
   color: #C22D2D;
-}
+}/* 계정 신청 완료 페이지 */
+
+.txt_dsc {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2;
+  color: #555;
+}/* 로그인 이전 설명부분 */
+
+.tit_section {
+  display: inline-block;
+  padding: 0 0 15px;
+  font-size: 20px;
+  color: #4C4C4C;
+}/* article의 title */
+
+.tit_subsection {
+  display: inline-block;
+  margin: 0 0 15px 0;
+  padding: 0 10px;
+  font-size: 18px;
+  color: #555;
+}/* article의 subtitle */
+
+.tit_popup {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2;
+  color: #555;
+}/* 로그인 이후 팝업 title */
 
 .txt_popup {
   position: relative;
@@ -715,18 +715,19 @@ img.img_thumb{
 /* select */
 
 .select_type1 {
-  border: 1px solid #B6B6B6;
+  width: 100%;
+  border: 1px solid #DDD;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: #4C4C4C;
   background-color: #FFF;
-}
+}/* width 100% */
 
 .select_type2 {
   max-width: 150px;
   min-height: 38px;
-  border: 1px solid #E5E8EB;
+  border: 1px solid #DDD;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1035,6 +1036,15 @@ img.img_thumb{
   text-align: center;
 }/* 로그인 이전 */
 
+.inner_type1 {
+  position: relative;
+  width: 1280px;
+  margin: 0 auto;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}/* 로그인 이전 */
+
 .wrap_contents_type2 {
   word-break: break-all;
   display: -webkit-box; 
@@ -1051,15 +1061,6 @@ img.img_thumb{
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }/* 로그인 이후 */
-
-.inner_type1 {
-  position: relative;
-  width: 1280px;
-  margin: 0 auto;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}/* 로그인 이전 */
 
 .inner_type2 {
   overflow-x: hidden;
@@ -1091,6 +1092,18 @@ img.img_thumb{
   -webkit-flex-direction: column;
   flex-direction: column;
   margin: 0 0 80px;
+}
+
+.wrap_data {
+  display: -webkit-box; 
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex; 
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  margin: 0 0 40px;
 }
 
 .wrap_tabs {
@@ -1148,7 +1161,6 @@ td.wrap_editor {
   position: relative;
   width: 100%;
   height: 100%;
-  margin-top: 40px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1162,20 +1174,36 @@ td.wrap_editor {
   margin-bottom: 0;
 }
 
-.panel {margin-bottom: 0!important;}
+.panel {
+  margin-bottom: 0!important;
+}
 
 .wrap_answer {
   display: inline-block;
   width: 100%;
 }
 
-.wrap_answer strong,
+.wrap_answer strong {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #CCC;
+}
+
 .wrap_answer p {
   display: inline-block;
   width: 100%;
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-bottom: 1px dotted #CCC;
+
+}
+
+.wrap_answer p.txt_answer {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
 }
 
 /* table */
@@ -1336,9 +1364,11 @@ tr.faq_done td {
   text-decoration: underline;
 }
 
-/* .table_result {
+.table_result {
+  min-width: 100%;
+  display: none;
   border: none;
-} */
+}
 
 /* sortable list */
 
@@ -1544,7 +1574,7 @@ input:checked + .slider:before {
   width: 100%;
   height: 20px;
   padding: 18px 12px;
-  border: 1px solid #E5E8EB;
+  border: 1px solid #DDD;
   outline: 0;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1558,7 +1588,7 @@ input:checked + .slider:before {
   width: 100%;
   height: 20px;
   padding: 18px 12px;
-  border: 1px solid #E5E8EB;
+  border: 1px solid #DDD;
   outline: 0;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1574,7 +1604,7 @@ input:checked + .slider:before {
   height: 20px;
   margin: 0;
   padding: 18px 12px;
-  border: 1px solid #E5E8EB;
+  border: 1px solid #DDD;
   outline: 0;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1710,7 +1740,7 @@ label, input.input_type1 + label, input.input_type1 {
   padding: 10px 0;
   margin: 0 0 30px 0;
   text-align: center;
-  border-bottom: 1px solid #CCC;
+  border-bottom: 1px solid #D9D9D9;
 }
 
 .popup_type3_items label {
@@ -1723,9 +1753,9 @@ label, input.input_type1 + label, input.input_type1 {
   max-height: 20px;
 }
 
-.popup_type3_items .wrap_btn {
+.popup_type3_items .wrap_button_type2 {
   margin: 30px 0 0 0;
-  border-top: 1px solid #CCC;
+  border-top: 1px solid #D9D9D9;
 }
 
 .wrap_dimmed {
