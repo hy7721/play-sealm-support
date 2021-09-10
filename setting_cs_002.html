@@ -24,25 +24,25 @@
   <div id="wrapper">
     <div class="cont_wrap">
       <header class="cont_header_type2"></header>
-      <!-- main 영역 -->
       <main class="cont_main_type2">
         <div class="wrap_aside"></div>
-
-
-
         <!-- 메인 컨텐츠 영역 -->
         <div class="wrap_contents_type2">
           <div class="inner_type2">
             <div class="wrap_article">
+
+
+
+
+
               <strong><span class="tit_section sr_only">처리현황</span></strong>
               <div class="wrap_tabs">
                 <ul class="list_tabs">
                   <!-- ui-state-active 클래스 추가 > 활성화-->
-                  <li><a href="#sectionTab1" class="link_tabs">전체현황</a></li>
+                  <li class="ui-state-active"><a href="#sectionTab1" class="link_tabs">전체현황</a></li>
                   <li><a href="#sectionTab2" class="link_tabs">문의처리</a></li>
                   <li><a href="#sectionTab3" class="link_tabs">템플릿 관리</a></li>
                 </ul>
-
                 <!-- tab contents 1 -->
                 <div id="sectionTab1">
                   <div class="wrap_datesrch">
@@ -70,87 +70,82 @@
                     <input type="text" class="input_type3" placeholder="제목">
                     <button type="button" class="btn_srch" onclick="srchResult();">검색</button>
                   </div>
-                  <table class="wrap_table table_type1">
-                    <thead>
-                      <tr>
-                        <td>유형</td>
-                        <td>담당</td>
-                        <td>접수</td>
-                        <td>처리중</td>
-                        <td>중간답변</td>
-                        <td>답변완료</td>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>설치&#x2f;실행</td>
-                        <td>운영1</td>
-                        <td>5</td>
-                        <td>12</td>
-                        <td>3</td>
-                        <td>1532</td>
-                      </tr>
-                    </tbody>
-                    <tfoot>
-                      <tr>
-                        <td colspan="2">총계</td>
-                        <td>73</td>
-                        <td>91</td>
-                        <td>29</td>
-                        <td>9094</td>
-                      </tr>
-                    </tfoot>
-                  </table>
-
-
-
-
-                  <!-- 검색 결과 노출(검색 버튼 클릭 시 show 클래스 추가) -->
-                  <table class="wrap_table table_type1 table_result">
-                    <thead>
-                      <tr>
-                        <td>처리</td>
-                        <td>유형</td>
-                        <td>담당</td>
-                        <td>접수일</td>
-                        <td>AUID</td>
-                        <td>제목</td>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <!-- 답변완료 상태일 때 faq_done 클래스 추가-->
-                      <tr class="faq_done">
-                        <td>답변완료</td>
-                        <td>설치&#x2f;실행</td>
-                        <td>운영1</td>
-                        <td>2021.05.10 23:59</td>
-                        <td>
-                          <a href="#none" target="_blank" class="link_table">11b23a</a>
-                        </td>
-                        <td>
-                          <a href="#none" class="link_table">환불해주세요</a>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-
-
-
-
-
-
-
-
-                  <div class="wrap_pagination">
-                    <a href="#" class="btn_prev">&lt;<span class="sr_only">Previous button</span></a>
-                    <ol class="list_pagination">
-                      <li class="active"><a href="#none">1</a></li>
-                      <li><a href="#none">2</a></li>
-                      <li><a href="#none">3</a></li>
-                    </ol>
-                    <a href="#" class="btn_next">&gt;<span class="sr_only">Next button</span></a>
+                  <div class="wrap_data">
+                    <table class="wrap_table table_type1">
+                      <thead>
+                        <tr>
+                          <td>유형</td>
+                          <td>담당</td>
+                          <td>접수</td>
+                          <td>처리중</td>
+                          <td>중간답변</td>
+                          <td>답변완료</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>설치&#x2f;실행</td>
+                          <td>운영1</td>
+                          <td>5</td>
+                          <td>12</td>
+                          <td>3</td>
+                          <td>1532</td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <td colspan="2">총계</td>
+                          <td>73</td>
+                          <td>91</td>
+                          <td>29</td>
+                          <td>9094</td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+                  <div class="wrap_data">
+                    <!-- 검색 결과 노출(검색 버튼 클릭 시) -->
+                    <div class="table_result">
+                      <table class="wrap_table table_type1">
+                        <thead>
+                          <tr>
+                            <td>처리</td>
+                            <td>유형</td>
+                            <td>담당</td>
+                            <td>접수일</td>
+                            <td>AUID</td>
+                            <td>제목</td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <!-- 답변완료 상태일 때 faq_done 클래스 추가-->
+                          <tr class="faq_done">
+                            <td>답변완료</td>
+                            <td>설치&#x2f;실행</td>
+                            <td>운영1</td>
+                            <td>2021.05.10 23:59</td>
+                            <td>
+                              <a href="#none" target="_blank" class="link_table">11b23a</a>
+                            </td>
+                            <td>
+                              <a href="#none" class="link_table">환불해주세요</a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="wrap_pagination">
+                        <a href="#" class="btn_prev">&lt;<span class="sr_only">Previous button</span></a>
+                        <ol class="list_pagination">
+                          <li class="active"><a href="#none">1</a></li>
+                          <li><a href="#none">2</a></li>
+                          <li><a href="#none">3</a></li>
+                        </ol>
+                        <a href="#" class="btn_next">&gt;<span class="sr_only">Next button</span></a>
+                      </div>
+                    </div>
                   </div>
                 </div>
+
                 <!-- tab contents 2 -->
                 <div id="sectionTab2">
                   <table class="wrap_table table_type1">
@@ -224,6 +219,7 @@
                     <a href="#" class="btn_next">&gt;<span class="sr_only">Next button</span></a>
                   </div>
                 </div>
+
                 <!-- tab contents 3 -->
                 <div id="sectionTab3">
                   <table class="wrap_table table_type1">
@@ -255,22 +251,20 @@
                   </div>
                 </div>
               </div>
+
+
+
+
+
             </div>
           </div>
         </div>
         <!-- // 메인 컨텐츠 영역 -->
-
-
-
       </main>
-      <!-- // main 영역 -->
-      <!-- footer 영역 -->
       <footer class="cont_footer_type2">
         <strong class="txt_copyright align_left">&copy; PLAYWITHGAMES.</strong>
       </footer>
-      <!-- // footer 영역 -->
     </div>
-  </div>
-  <!-- // #wrapper -->
+  </div><!-- // #wrapper -->
 
 </body></html>

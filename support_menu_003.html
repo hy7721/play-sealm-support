@@ -7,7 +7,7 @@
   <title>Support > 메뉴관리 > FAQ</title>
 
   <!-- css -->
-  <link href="./assets/css/jquery-ui.css" rel="stylesheet">
+  <!-- <link href="./assets/css/jquery-ui.css" rel="stylesheet"> -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"><!-- bootstrap 3.4.1 only -->
   <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet"><!-- editor -->
   <link href="./assets/css/main.css" rel="stylesheet">
@@ -19,22 +19,22 @@
   <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script><!-- editor -->
   <script src="./assets/js/main.js"></script>
 </head>
-
 <body>
   <!-- #wrapper -->
   <div id="wrapper">
     <div class="cont_wrap">
       <header class="cont_header_type2"></header>
-      <!-- main 영역 -->
       <main class="cont_main_type2">
         <div class="wrap_aside"></div>
-
-
-
         <!-- 메인 컨텐츠 영역 -->
         <div class="wrap_contents_type2">
           <div class="inner_type2">
             <div class="wrap_article">
+
+
+
+
+
               <strong><span class="tit_section">FAQ</span></strong></strong>
               <table class="wrap_table table_type1">
                 <tr>
@@ -56,7 +56,7 @@
                   </td>
                 </tr>
               </table>
-              <div class="wrap_btn">
+              <div class="wrap_button_type2">
                 <button type="button" class="btn_save" value="저장" onclick="layerPopupOpen('alert_save'); return false;">
                   <span>저장</span>
                 </button>
@@ -64,24 +64,21 @@
                   <span>취소</span>
                 </button>
               </div>
+
+
+
+
+
             </div>
           </div>
         </div>
         <!-- // .메인 컨텐츠 영역 -->
-
-
-
       </main>
-      <!-- // main 영역 -->
-      <!-- footer 영역 -->
       <footer class="cont_footer_type2">
         <strong class="txt_copyright align_left">&copy; PLAYWITHGAMES.</strong>
       </footer>
-      <!-- // footer 영역 -->
-
     </div>
-  </div>
-  <!-- // #wrapper -->
+  </div><!-- // #wrapper -->
 
   <!-- 팝업 영역 > 저장 -->
   <div class="wrap_popup alert_save">
@@ -91,28 +88,6 @@
     </div>
     <div class="wrap_dimmed"></div>
   </div>
-  <!-- // 팝업 영역 -->
-  
-  <!-- 팝업 영역 > 취소 -->
-  <div class="wrap_popup alert_add">
-    <div class="popup_type3">
-      <div class="popup_type3_items">
-        <strong><span class="txt_dsc">항목</span></strong>
-        <label for="addFaq">
-          <input type="text" id="addFaq" name="add faq list" class="input_type2" placeholder="100byte까지 입력할 수 있습니다." required>
-        </label>
-        <div class="wrap_btn">
-          <button type="button" class="btn_b_blue" onclick="layerPopupClose(); return false;">
-            <span>등록</span>
-          </button>
-          <button type="button" class="btn_b_blue" onclick="layerPopupClose(); return false;">
-            <span>취소</span>
-          </button>  
-        </div>
-      </div>
-    </div>
-    <div class="wrap_dimmed"></div>
-  </div>
-  <!-- // 팝업 영역 -->
+    <!-- // 팝업 영역 > 저장 -->
 
 </body></html>

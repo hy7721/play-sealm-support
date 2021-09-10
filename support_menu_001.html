@@ -20,22 +20,25 @@
   <script src="./assets/js/main.js"></script>
 </head>
 <body>
+  <!-- #wrapper -->
   <div id="wrapper">
     <div class="cont_wrap">
       <header class="cont_header_type2"></header>
-      <!-- main 영역 -->
-      <main class="cont_main_type2">
+      <main class="cont_main_type2"> 
         <div class="wrap_aside"></div>
-
-
-
         <!-- 메인 컨텐츠 영역 -->
         <div class="wrap_contents_type2">
           <div class="inner_type2">
             <div class="wrap_article">
+
+
+
+
+
               <strong><span class="tit_section">FAQ</span></strong></strong>
               <!-- 메뉴관리 > FAQ -->
               <ul class="table_type1">
+                <!-- 테이블 헤더 부분 -->
                 <li class="list_table title_table">
                   <div class="item_table item_table1"><strong>항목</strong></div>
                   <div class="item_table item_table2"><strong>변경일시</strong></div>
@@ -195,7 +198,7 @@
                   <div class="item_table item_table3">양영근</div>
                 </li>
               </ul>
-              <div class="wrap_btn">
+              <div class="wrap_button_type2">
                 <button type="button" class="btn_add" value="추가" onclick="layerPopupOpen('alert_add'); return false;">
                   <span>&#43;</span>
                   <span class="sr_only">추가</span>
@@ -205,21 +208,19 @@
                 </button>
               </div>
               <!-- // 메뉴관리 > FAQ -->
+
+
+
+
+
             </div>
           </div>
         </div>
         <!-- // .메인 컨텐츠 영역 -->
-
-
-
       </main>
-      <!-- // main 영역 -->
-      <!-- footer 영역 -->
       <footer class="cont_footer_type2">
         <strong class="txt_copyright align_left">&copy; PLAYWITHGAMES.</strong>
       </footer>
-      <!-- // footer 영역 -->
-
     </div>
   </div><!-- // #wrapper -->
 
@@ -227,11 +228,11 @@
     <div class="wrap_popup alert_add">
       <div class="popup_type3">
         <div class="popup_type3_items">
-          <strong><span class="txt_dsc">항목</span></strong>
+          <strong><span class="tit_popup">항목</span></strong>
           <label for="addFaq">
             <input type="text" id="addFaq" name="add faq list" class="input_type2" placeholder="100byte까지 입력할 수 있습니다." required>
           </label>
-          <div class="wrap_btn">
+          <div class="wrap_button_type2">
             <button type="button" class="btn_b_blue" onclick="layerPopupClose(); return false;">등록</button>
             <button type="button" class="btn_b_blue" onclick="layerPopupClose(); return false;">취소</button>  
           </div>
@@ -239,8 +240,7 @@
       </div>
       <div class="wrap_dimmed"></div>
     </div>
-    <!-- // 팝업 영역 -->
-
+    <!-- // 팝업 영역 > 추가 -->
     <!-- 팝업 영역 > 저장 -->
     <div class="wrap_popup alert_save">
       <div class="popup_type1">
@@ -249,6 +249,6 @@
       </div>
       <div class="wrap_dimmed"></div>
     </div>
-    <!-- // 팝업 영역 -->
+    <!-- // 팝업 영역 > 저장 -->
 
 </body></html>

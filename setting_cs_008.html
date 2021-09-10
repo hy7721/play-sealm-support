@@ -62,7 +62,7 @@
                       </tr>
                       <tr>
                         <td colspan="3" style="text-align: left">
-                          <strong>제목 </strong>
+                          <strong>제목 </strong>                                                                                                                                                                                                                                                                                                                                                                        
                           <span>문의 9094</span>
                         </td>
                       </tr>
@@ -75,25 +75,33 @@
                           <strong>첨부파일</strong>
                         </td>
                       </tr>
+                      <!-- 중간답변 -->
+                      <tr>
+                        <td colspan="3" style="text-align: left">
+                          <div class="wrap_answer">
+                            <strong><span class="ico_answer">&#8227;</span>중간답변</strong>
+                            <p class="txt_answer">
+                              안녕하세요! 플레이위드입니다.<br>
+                              중간답변 드립니다.<br>
+                              감사합니다. 
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
+                        <!-- 답변 완료 -->
+                      <tr>
+                        <td colspan="3" style="text-align: left">
+                          <div class="wrap_answer">
+                            <strong><span class="ico_answer">&#8227;</span>답변 완료</strong>
+                            <p class="txt_answer">
+                              안녕하세요! 플레이위드입니다.<br>
+                              최종답변 드립니다.<br>
+                              감사합니다. 
+                            </p>
+                          </div>
+                        </td>
+                      </tr>
                     </table>
-                  </div>
-                  <div class="wrap_data">
-                    <div class="wrap_editor">
-                      <strong class="tit_subsection">답변</strong>
-                      <select name="faq status" id="selectStatus" class="select_type2">
-                        <option selected>상태</option>
-                        <option value="">접수</option>
-                        <option value="">처리중</option>
-                        <option value="">중간답변</option>
-                        <option value="">답변완료</option>
-                      </select>
-                    </div>
-                    <div id="summernote"></div>
-                    <div class="wrap_button_type2">
-                      <button type="button" class="btn_save" value="저장" onclick="layerPopupOpen('alert_save'); return false;">
-                        <span>저장</span>
-                      </button>  
-                    </div>
                   </div>
                   <div class="wrap_data">
                     <strong class="tit_subsection">이전 문의내역</strong>
@@ -147,15 +155,5 @@
       </footer>
     </div>
   </div><!-- // #wrapper -->
-
-  <!-- 팝업 영역 > 저장 -->
-  <div class="wrap_popup alert_save">
-    <div class="popup_type1">
-      <p class="txt_popup">저장되었습니다.</p>
-      <button type="button" onclick="layerPopupClose(); return false;" class="btn_gray">OK</button>
-    </div>
-    <div class="wrap_dimmed"></div>
-  </div>
-  <!-- // 팝업 영역 > 저장 -->
 
 </body></html>
