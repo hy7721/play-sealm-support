@@ -68,12 +68,9 @@ $(function() {
       ['view', ['fullscreen', 'codeview']]
     ]
   });
-
-
-
-
-
-  function srchResult(){
-    $('.table_result').show();
-  }
 });
+
+// setting_cs_002.html > 검색 버튼 클릭시 검색결과 노출
+function srchResult() {
+  $('.table_result').css('display', 'block');
+}
