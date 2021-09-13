@@ -301,10 +301,6 @@ button[class^=btn_] {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -moz-transition: all 0.2s ease;
-  -webkit-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
   font-size: 12px;
   font-weight: 700;
 }
@@ -440,17 +436,11 @@ button[class^=btn_] {
   height: 38px;
   margin-left: 10px;
   padding: 5px 15px;
-  border: 1px solid #DDD;
   border-radius: 8px;
   line-height: 26px;
-  color:#4C4C4C;
-  background-color: #FFF;
-}/* 검색 버튼 */
-.btn_srch:hover {
-  border: 1px solid #0070C0;
-  color: #FFF;
+  color:#FFF;
   background-color: #0070C0;
-}
+}/* 검색 버튼 */
 
 /* pagination button */
 
@@ -1168,7 +1158,7 @@ td.wrap_editor {
 
 .wrap_editor select {
   margin: -10px 0 0 0;
-}
+}                
 
 .wrap_editor .note-editor {
   margin-bottom: 0;
@@ -1197,13 +1187,6 @@ td.wrap_editor {
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-bottom: 1px dotted #CCC;
-
-}
-
-.wrap_answer p.txt_answer {
-  margin-bottom: 0;
-  padding-bottom: 0;
-  border-bottom: none;
 }
 
 /* table */
