@@ -26,7 +26,21 @@ setting_cs_008.html
   > Page ID: Setting-CS-008
   > 문의처리 - 상세 - 답변 완료
 
+setting_cs_010.html
+  > Page ID: Setting-CS-010
+  > 처리현황 - 템플릿 관리
 
+setting_cs_013.html
+  > Page ID: Setting-CS-013
+  > 제재관리
+
+setting_cs_015.html
+  > Page ID: Setting-CS-015
+  > 담당설정
+
+
+
+-------------------------------------------------------------------------------------------------------
 
 2021. 09. 13
 > Page ID로 전달드리는 게 편하실 것 같아 HTML 이름명 변경했습니다.
