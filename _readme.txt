@@ -26,21 +26,56 @@ setting_cs_008.html
   > Page ID: Setting-CS-008
   > 문의처리 - 상세 - 답변 완료
 
-setting_cs_010.html
-  > Page ID: Setting-CS-010
-  > 처리현황 - 템플릿 관리
 
-setting_cs_013.html
-  > Page ID: Setting-CS-013
-  > 제재관리
+--------------------------------------------------------------------------------------------------------
 
-setting_cs_015.html
-  > Page ID: Setting-CS-015
-  > 담당설정
+2021. 11. 15
+> setting_cs_010.html 마크업 추가 (summernote 제목 입력란 추가)
+  <label for="editorTitle"></label>
+  <input type="text" id="editorTitle" name="title" class="input_type2 tit_summernote" placeholder="제목을 입력해주세요." value="" min="" max="">
 
+> summernote 에디터 마크업 수정 (id를 class로 수정)
+  <div id="summernote"></div>
+  <div class="summernote"></div>
 
+> main.css 수정
+  .input_type2.tit_summernote 추가
 
--------------------------------------------------------------------------------------------------------
+> main.js 수정
+  $(".summernote").summernote({
+    placeholder: "내용을 입력해주세요.",
+    tabsize: 2,
+    minHeight: 300,
+    toolbar: [
+      ["font", ["bold", "underline"]],
+      ["color", ["color"]],
+      ["table", ["table"]],
+      ["insert", ["link", "picture"]],
+      ["view", ["fullscreen", "codeview"]],
+    ],
+  });
+
+--------------------
+
+2021. 11. 03
+> main.css 수정
+  .tit_faq > z-index: 1 추가
+
+> main.js 수정
+  $("#summernote").summernote({
+    placeholder: "내용을 입력해주세요.",
+    tabsize: 2,
+    minHeight: 300,
+    toolbar: [
+      ["font", ["bold", "underline"]],
+      ["color", ["color"]],
+      ["table", ["table"]],
+      ["insert", ["link", "picture"]],
+      ["view", ["fullscreen", "codeview"]],
+    ],
+  });
+
+--------------------
 
 2021. 09. 13
 > Page ID로 전달드리는 게 편하실 것 같아 HTML 이름명 변경했습니다.
