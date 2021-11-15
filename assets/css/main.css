@@ -1,8 +1,6 @@
 @charset "utf-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap");
 
-/* Noto Sans KR */
-
 @font-face {
   font-family: "Noto Sans KR";
   font-style: normal;
@@ -10,7 +8,6 @@
   src: local("Noto Sans KR");
   src: url(../fonts/Noto_Sans_KR/NotoSansKR-Thin.woff) format("woff");
 }
-
 @font-face {
   font-family: "Noto Sans KR";
   font-style: normal;
@@ -18,7 +15,6 @@
   src: local("Noto Sans KR");
   src: url(../fonts/Noto_Sans_KR/NotoSansKR-Light.woff) format("woff");
 }
-
 @font-face {
   font-family: "Noto Sans KR";
   font-style: normal;
@@ -26,7 +22,6 @@
   src: local("Noto Sans KR");
   src: url(../fonts/Noto_Sans_KR/NotoSansKR-Regular.woff) format("woff");
 }
-
 @font-face {
   font-family: "Noto Sans KR";
   font-style: normal;
@@ -34,7 +29,6 @@
   src: local("Noto Sans KR");
   src: url(../fonts/Noto_Sans_KR/NotoSansKR-Medium.woff) format("woff");
 }
-
 @font-face {
   font-family: "Noto Sans KR";
   font-style: normal;
@@ -42,7 +36,6 @@
   src: local("Noto Sans KR");
   src: url(../fonts/Noto_Sans_KR/NotoSansKR-Bold.woff) format("woff");
 }
-
 @font-face {
   font-family: "Noto Sans KR";
   font-style: normal;
@@ -51,8 +44,6 @@
   src: url(../fonts/Noto_Sans_KR/NotoSansKR-Black.woff) format("woff");
 }
 
-/* Noto Sans SC */
-
 @font-face {
   font-family: "Noto Sans SC";
   font-style: normal;
@@ -60,7 +51,6 @@
   src: local("Noto Sans SC");
   src: url(../fonts/Noto_Sans_SC/NotoSansSC-Thin.woff) format("woff");
 }
-
 @font-face {
   font-family: "Noto Sans SC";
   font-style: normal;
@@ -68,7 +58,6 @@
   src: local("Noto Sans SC");
   src: url(../fonts/Noto_Sans_SC/NotoSansSC-Light.woff) format("woff");
 }
-
 @font-face {
   font-family: "Noto Sans SC";
   font-style: normal;
@@ -76,7 +65,6 @@
   src: local("Noto Sans SC");
   src: url(../fonts/Noto_Sans_SC/NotoSansSC-Regular.woff) format("woff");
 }
-
 @font-face {
   font-family: "Noto Sans SC";
   font-style: normal;
@@ -84,7 +72,6 @@
   src: local("Noto Sans SC");
   src: url(../fonts/Noto_Sans_SC/NotoSansSC-Medium.woff) format("woff");
 }
-
 @font-face {
   font-family: "Noto Sans SC";
   font-style: normal;
@@ -92,7 +79,6 @@
   src: local("Noto Sans SC");
   src: url(../fonts/Noto_Sans_SC/NotoSansSC-Bold.woff) format("woff");
 }
-
 @font-face {
   font-family: "Noto Sans SC";
   font-style: normal;
@@ -128,8 +114,8 @@ textarea {
   font-size: 14px;
   font-weight: 400;
   color: #4C4C4C;
-  background: transparent;
   font-family: "Noto Sans KR", "Noto Sans SC", "Apple SD Gothic Neo", sans-serif;
+  background: transparent;
 }
 
 select {
@@ -184,22 +170,75 @@ table {
   border-spacing: 0;
 }
 
-::placeholder {
+::-moz-input-placeholder {
+  opacity: 1;
   font-size: 12px;
   font-weight: 400;
   color: #7F7F7F;
 }
 :-moz-input-placeholder {
+  opacity: 1;
   font-size: 12px;
   font-weight: 400;
   color: #7F7F7F;
 }
 ::-webkit-input-placeholder {
+  opacity: 1;
+  font-size: 12px;
+  font-weight: 400;
+  color: #7F7F7F;
+}
+::-ms-input-placeholder {
+  opacity: 1;
   font-size: 12px;
   font-weight: 400;
   color: #7F7F7F;
 }
 :-ms-input-placeholder {
+  opacity: 1;
+  font-size: 12px;
+  font-weight: 400;
+  color: #7F7F7F;
+}
+::placeholder {
+  opacity: 1;
+  font-size: 12px;
+  font-weight: 400;
+  color: #7F7F7F;
+}
+
+input[type="text"]::-moz-input-placeholder {
+  opacity: 1;
+  font-size: 12px;
+  font-weight: 400;
+  color: #7F7F7F;
+}
+input[type="text"]:-moz-input-placeholder {
+  opacity: 1;
+  font-size: 12px;
+  font-weight: 400;
+  color: #7F7F7F;
+}
+input[type="text"]::-webkit-input-placeholder {
+  opacity: 1;
+  font-size: 12px;
+  font-weight: 400;
+  color: #7F7F7F;
+}
+input[type="text"]::-ms-input-placeholder {
+  opacity: 1;
+  font-size: 12px;
+  font-weight: 400;
+  color: #7F7F7F;
+}
+input[type="text"]:-ms-input-placeholder {
+  opacity: 1;
+  font-size: 12px;
+  font-weight: 400;
+  color: #7F7F7F;
+}
+input[type="text"]::placeholder {
+  opacity: 1;
   font-size: 12px;
   font-weight: 400;
   color: #7F7F7F;
@@ -1640,11 +1679,42 @@ input:checked + .slider:before {
   width: 100%;
   height: 20px;
   padding: 18px 12px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   border: 1px solid #DDD;
   outline: 0;
   font-size: 12px;
+  line-height: 12px;
   color: #4C4C4C;
   background-color: #FFF;
+}
+
+/* 2021. 11. 15 추가 */
+.input_type2.tit_summernote {
+  margin-bottom: 5px;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+input.input_type2.tit_summernote::-moz-input-placeholder {
+  font-size: 14px;
+}
+input.input_type2.tit_summernote:-moz-input-placeholder {
+  font-size: 14px;
+}
+input.input_type2.tit_summernote::-webkit-input-placeholder {
+  font-size: 14px;
+}
+input.input_type2.tit_summernote::-ms-input-placeholder {
+  font-size: 14px;
+}
+input.input_type2.tit_summernote:-ms-input-placeholder {
+  font-size: 14px;
+}
+input.input_type2.tit_summernote::placeholder {
+  font-size: 14px;
 }
 
 .input_type3 {
