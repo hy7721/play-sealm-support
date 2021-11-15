@@ -50,8 +50,10 @@ $(function () {
       }
     });
   });
+});
 
-  // editor(summer note)
+// editor(summer note)
+$(document).ready(function() {
   $(".summernote").summernote({
     placeholder: "내용을 입력해주세요.",
     tabsize: 2,
@@ -64,12 +66,4 @@ $(function () {
       ["view", ["fullscreen", "codeview"]],
     ],
   });
-
-  // var i = 0;
-  // $(document).ready(function(){
-  //   $('.btn_create').click(function(){
-  //     $('.add_newnote').append('<div class="wrap_data"><div class="summernote" id="summernote"></div><div class="wrap_button_type2"><button type="button" class="btn_save" value="저장" onclick="layerPopupOpen("alert_save"); return false;"><span>저장</span></button></div></div>')
-  //     i++;
-  //   })
-  // })
 });
