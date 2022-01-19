@@ -27,7 +27,6 @@
       <header class="cont_header_type2"></header>
       <main class="cont_main_type2">
         <div class="wrap_aside"></div>
-
         <!-- 메인 컨텐츠 영역 -->
         <div class="wrap_contents_type2">
           <div class="inner_type2">
@@ -72,6 +71,27 @@
     </div>
   </div><!-- // #wrapper -->
 
+  <!-- 팝업 영역 > 추가 -->
+  <div class="wrap_popup alert_add">
+    <div class="popup_type3">
+      <div class="popup_type3_items">
+        <strong><span class="tit_popup">항목</span></strong>
+        <label for="addFaq">
+          <input type="text" id="addFaq" name="add faq list" class="input_type2" placeholder="100byte까지 입력할 수 있습니다." required>
+        </label>
+        <div class="wrap_button_type2">
+          <button type="button" class="btn_b_blue" onclick="layerPopupClose(); return false;">
+            <span>등록</span>
+          </button>
+          <button type="button" class="btn_b_blue" onclick="layerPopupClose(); return false;">
+            <span>취소</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="wrap_dimmed"></div>
+  </div>
+  <!-- // 팝업 영역 > 추가 -->
   <!-- 팝업 영역 > 저장 -->
   <div class="wrap_popup alert_save">
     <div class="popup_type1">
@@ -80,6 +100,15 @@
     </div>
     <div class="wrap_dimmed"></div>
   </div>
-    <!-- // 팝업 영역 > 저장 -->
+  <!-- // 팝업 영역 > 저장 -->
+  <!-- 팝업 영역 > 수정 -->
+  <div class="wrap_popup alert_modify">
+    <div class="popup_type1">
+      <p class="txt_popup">수정되었습니다.</p>
+      <button type="button" onclick="layerPopupClose(); return false;" class="btn_gray">OK</button>
+    </div>
+    <div class="wrap_dimmed"></div>
+  </div>
+  <!-- // 팝업 영역 > 수정 -->
 
 </body></html>
