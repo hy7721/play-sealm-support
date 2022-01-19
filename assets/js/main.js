@@ -52,7 +52,7 @@ $(function () {
   });
 });
 
-// editor(summer note)
+// editor(summernote)
 $(document).ready(function() {
   $(".summernote").summernote({
     placeholder: "내용을 입력해주세요.",
@@ -65,5 +65,17 @@ $(document).ready(function() {
       ["insert", ["link", "picture"]],
       ["view", ["fullscreen", "codeview"]],
     ],
+  });
+
+  // 2022.1.19 추가
+  $('.btn_summernote').on('click', function(e) {
+    e.preventDefault();
+    if ($(this).hasClass('is_active')) {
+      $(this).removeClass('is_active');
+      $(this).next().stop().slideUp(300);
+    } else {
+      $(this).addClass('is_active');
+      $(this).next().stop().slideDown(300);
+    }
   });
 });

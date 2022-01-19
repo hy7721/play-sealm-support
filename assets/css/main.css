@@ -177,6 +177,8 @@ textarea {
   vertical-align: middle;
 }
 
+/* --- placeholder --- */
+
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   font-size: 12px;
   font-weight: 400;
@@ -319,9 +321,10 @@ a:visited {
   color: inherit;
 }
 
+/* IE에서 br 태그 깨지는 이슈 해결 */
 br {
   font-family: 'Dotum';
-} /* IE에서 br 태그 깨지는 이슈 해결 */
+}
 
 
 
@@ -810,9 +813,11 @@ img.img_thumb {
   background-color: #FFF;
 }
 
-/* 2021. 11. 15 추가 */
+/* 2021.11.15 추가 */
 .input_type2.tit_summernote {
-  margin-bottom: 5px;
+  width: calc(100% - 50px); /* 2022.1.19 추가 */
+  /* margin-bottom: 5px; */ /* 2022.1.19 삭제 */
+  margin-left: -3px;
   border-radius: 3px;
   font-size: 14px;
   line-height: 14px;
@@ -1201,9 +1206,9 @@ input.input_type1 {
 
 /* 로그인 이후 */
 .inner_type2 {
-  /* overflow-x: hidden; */ /* 2022.01.18 주석처리 */
-  /* overflow-y: auto; */ /* 2022.01.18 주석처리 */
-  /* overflow: auto; */ /* 2022.01.18 주석처리 */
+  /* overflow-x: hidden; */ /* 2022.1.19 주석처리 */
+  /* overflow-y: auto;  */ /* 2022.1.19 주석처리 */
+  overflow: auto;
   position: relative;
   width: 100%;
   min-width: 1520px;
@@ -1241,7 +1246,7 @@ input.input_type1 {
   -webkit-flex-direction: column; /* Chrome */
   flex-direction: column;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .wrap_tabs {
@@ -1326,6 +1331,62 @@ td.wrap_editor {
   margin-bottom: 10px;
   padding-bottom: 10px;
   /* border-bottom: 1px dotted #CCC; */ /* 2021.12.22 주석처리 */
+}
+
+/* 2022.1.19 추가 */
+.list_editor {
+  overflow: hidden;
+  position: relative;
+}
+
+/* 2022.1.19 추가 */
+.btn_summernote {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  margin-left: 8px;
+  border: 1px solid #DDD;
+  border-radius: 3px;
+}
+.btn_summernote:before {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 2px;
+  right: 12px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #7F7F7F;
+}
+.btn_summernote:after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 2px;
+  right: 12px;
+  background-color: #7F7F7F;
+}
+
+.btn_summernote.is_active:before {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.wrap_editor_summer {
+  overflow: hidden;
+  display: none;
+  margin-top: 10px;
 }
 
 /* table */
@@ -1597,6 +1658,7 @@ input {
 }
 
 /* turn on/off button */
+
 .wrap_faq_toggle {
   display: -webkit-box; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
   display: -moz-box; /* Firefox 19- */
