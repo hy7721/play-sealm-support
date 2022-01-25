@@ -1348,39 +1348,57 @@ td.wrap_editor {
   border: 1px solid #DDD;
   border-radius: 3px;
 }
-.btn_summernote:before {
+/* 2022.1.25 수정 */
+.btn_summernote::before,
+.btn_summernote::after {
   content: '';
+  display: block;
   position: absolute;
   width: 14px;
-  height: 2px;
-  right: 12px;
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  height: 2px; 
+  top: -2px;
+  right: 15px;
   background-color: #7F7F7F;
 }
-.btn_summernote:after {
-  content: '';
-  position: absolute;
-  width: 14px;
-  height: 2px;
-  right: 12px;
-  background-color: #7F7F7F;
-}
+/* 2022.1.25 수정 */
+.btn_summernote::before {
+  -webkit-transform: translate(-2.5px,22px) rotate(45deg) scale(0.5,1);
+  -moz-transform: translate(-2.5px,22px) rotate(45deg) scale(0.5,1);
+  -ms-transform: translate(-2.5px,22px) rotate(45deg) scale(0.5,1);
+  -o-transform: translate(-2.5px,22px) rotate(45deg) scale(0.5,1);
+  transform: translate(-2.5px,22px) rotate(45deg) scale(0.5,1);
 
-.btn_summernote.is_active:before {
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
+}
+/* 2022.1.25 수정 */
+.btn_summernote::after {
+  -webkit-transform: translate(4.5px,20px) rotate(-45deg) scale(1,1);
+  -moz-transform: translate(4.5px,20px) rotate(-45deg) scale(1,1);
+  -ms-transform: translate(4.5px,20px) rotate(-45deg) scale(1,1);
+  -o-transform: translate(4.5px,20px) rotate(-45deg) scale(1,1);
+  transform: translate(4.5px,20px) rotate(-45deg) scale(1,1);
+  
+}
+/* 2022.1.25 수정 */
+.btn_summernote.is_active::before,
+.btn_summernote.is_active::after {
+  top: 4px;
+  right: 13px;
+}
+/* 2022.1.25 수정 */
+.btn_summernote.is_active::before {
+  -webkit-transform: translate(0,14px) rotate(45deg);
+  -moz-transform: translate(0,14px) rotate(45deg);
+  -ms-transform: translate(0,14px) rotate(45deg);
+  -o-transform: translate(0,14px) rotate(45deg);
+  transform: translate(0,14px) rotate(45deg);
+}
+/* 2022.1.25 수정 */
+.btn_summernote.is_active::after {
+  -webkit-transform: translate(0,14px) rotate(-45deg);
+  -moz-transform: translate(0,14px) rotate(-45deg);
+  -ms-transform: translate(0,14px) rotate(-45deg);
+  -o-transform: translate(0,14px) rotate(-45deg);
+  transform: translate(0,14px) rotate(-45deg);
 }
 
 .wrap_editor_summer {
