@@ -1,0 +1,60 @@
+.sr_only {
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  z-index: -7721;
+}
+
+.ellipsis {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+.ellipsis_2 {
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+img.img_thumb {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.align_left,
+.align_center,
+.align_right {
+  display: block;
+}
+
+.align_left {
+  text-align: left;
+}
+
+.align_center {
+  text-align: center;
+}
+
+.align_right {
+  text-align: right;
+}
+
+.txt_regular {
+  font-weight: 400;
+}
+
+.txt_medium {
+  font-weight: 500;
+}
+
+.txt_bold {
+  font-weight: 700;
+}
