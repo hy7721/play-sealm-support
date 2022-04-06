@@ -1,0 +1,18 @@
+// 로그인 이전
+.cont_header_type1 {
+  position: relative;
+  text-align: center;
+}
+
+// 로그인 이후
+.cont_header_type2 {
+  @include flexbox;
+  background-color: $white;
+  border-bottom: 1px solid $grey;
+  height: 100px;
+  min-width: 1440px;
+  padding: 0 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}

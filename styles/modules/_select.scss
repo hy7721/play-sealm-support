@@ -1,0 +1,82 @@
+select {
+  @include font-common-normal;
+  background-color: $white;
+  border: 1px solid $border;
+  color: $primary;
+
+  &:active,
+  &:hover,
+  &:focus {
+    border: 1px solid $primary;
+  }
+}
+
+// width 100%
+.select_type1 {
+  background-color: $white;
+  border: 1px solid $border;
+  color: $primary;
+  width: 100%;
+}
+
+// max-width: 150px, min-height: 38px
+.select_type2 {
+  background-color: $white;
+  border: 1px solid $border;
+  color: $primary;
+  max-width: 150px;
+  min-height: 38px;
+}
+
+// width: 200px
+.select_type3 {
+  background-color: $white;
+  border: 1px solid $border;
+  color: $primary;
+  width: 200px;
+}
+
+// table 안에 select와 button이 함께 있을 때
+.select_type4 {
+  background-color: $white;
+  border: 1px solid $border;
+  color: $primary;
+  min-height: 32px;
+  width: calc(100% - 300px);
+}
+
+.wrap_select_lang {
+  height: 30px;
+  margin-right: 10px;
+  max-width: 200px;
+  min-width: 100px;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  width: 100%;
+}
+
+.wrap_select_login {
+  height: 38px;
+  width: 100%;
+
+  + .wrap_select_login {
+    margin-top: 15px;
+  }
+}
+
+.select_group,
+.select_authority {
+  height: 100%;
+  width: 100%;
+}
+
+.wrap_select_nation {
+  @include flexbox(center, start);
+  height: 100px;
+  min-width: 260px;
+}
+
+.select_nation {
+  width: 100%;
+}

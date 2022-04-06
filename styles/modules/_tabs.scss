@@ -1,0 +1,50 @@
+.wrap_tabs {
+  height: 100%;
+  width: 100%;
+}
+
+.list_tabs {
+  @include font-common-bold;
+  border-bottom: 3px solid $border;
+  color: $tertiary;
+  float: left;
+  height: 37px;
+  margin-bottom: 15px;
+  width: 100%;
+
+  li {
+    background-color: $border;
+    float: left;
+
+    + li {
+      margin-left: 2px;
+    }
+
+    &.ui-state-active .link_tabs {
+      background-color: $blue;
+      color: $white;
+      text-decoration: none;
+    }
+  }
+
+  .link_tabs {
+    height: 37px;
+    padding: 10px;
+    line-height: $line-height-14;
+
+    &:hover {
+      background-color: $blue;
+      color: $white;
+      text-decoration: none;
+    }
+
+    &:active,
+    &:focus,
+    &:visited,
+    &:link {
+      border: 0;
+      outline: 0;
+      text-decoration: none;
+    }
+  }
+}

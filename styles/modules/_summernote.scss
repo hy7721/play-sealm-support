@@ -1,0 +1,76 @@
+.list_editor {
+  overflow: hidden;
+  position: relative;
+}
+
+.btn_summernote {
+  border: 1px solid $border;
+  border-radius: 3px;
+  display: inline-block;
+  height: 38px;
+  margin-left: 4px;
+  width: 38px;
+
+  &::before,
+  &::after {
+    background-color: $placeholder;
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    right: 15px;
+    top: -2px;
+    width: 14px;
+  }
+
+  &::before {
+    transform: translate(-2.5px, 22px) rotate(45deg) scale(0.5, 1);
+  }
+
+  &::after {
+    transform: translate(4.5px, 20px) rotate(-45deg) scale(1, 1);
+  }
+
+  &.is_active {
+    &::before,
+    &::after {
+      right: 13px;
+      top: 4px;
+    }
+
+    &::before {
+      transform: translate(0, 14px) rotate(45deg);
+    }
+
+    &::after {
+      transform: translate(0, 14px) rotate(-45deg);
+    }
+  }
+}
+
+.wrap_editor_summer {
+  display: none;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+td.wrap_editor {
+  text-align: left;
+
+  select {
+    margin-top: -10px;
+  }
+
+  .note-editor {
+    margin-bottom: 0;
+  }
+}
+
+.panel {
+  margin-bottom: 0 !important;
+}
+
+.note-editor.note-airframe .note-placeholder,
+.note-editor.note-frame .note-placeholder {
+  @include font-common-normal;
+}

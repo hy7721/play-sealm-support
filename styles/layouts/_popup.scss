@@ -1,0 +1,134 @@
+.wrap_popup {
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 7721;
+}
+
+.wrap_close {
+  height: 55px;
+  margin: 10px auto 0;
+  position: relative;
+  width: 1280px;
+  z-index: 77721;
+}
+
+.btn_close {
+  background-image: url('../images/btn_close.png') center center no-repeat;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+}
+
+// popup_type1
+.popup_type1 {
+  background-color: $white;
+  box-shadow: 27px 43px 43px -26px rgba($tertiary, 0.39);
+  color: $primary;
+  left: 50%;
+  max-width: 400px;
+  min-height: 150px;
+  padding: 20px;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+  z-index: 721;
+}
+
+// popup_type2
+.popup_type2 {
+  background-color: $white;
+  border: 2px solid $white;
+  height: 85vh;
+  margin: 0 auto;
+  min-height: 600px;
+  overflow-x: visible;
+  overflow-y: auto;
+  padding: 50px 30px;
+  position: relative;
+  width: 1280px;
+  z-index: 721;
+
+  .popup_type2_items {
+    text-align: center;
+
+    + .popup_type2_items {
+      margin-top: 80px;
+    }
+  }
+}
+
+// popup_type3
+.popup_type3 {
+  background-color: $white;
+  box-shadow: 27px 43px 43px -26px rgba($tertiary, 0.39);
+  color: $primary;
+  left: 50%;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 500px;
+  z-index: 721;
+}
+
+.popup_type3_items {
+  strong {
+    border-bottom: 1px solid $grey;
+    display: inline-block;
+    margin-bottom: 30px;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+
+    label {
+      margin-top: 0;
+    }
+  }
+
+  input {
+    height: 100%;
+    max-height: 20px;
+    width: 360px;
+  }
+
+  .wrap_button_type2 {
+    border-top: 1px solid $grey;
+    margin-top: 30px;
+  }
+}
+
+.wrap_dimmed {
+  background-color: rgba($black, 0.8);
+  display: block;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 64;
+}
+
+.tit_popup {
+  @include font-bigger-normal;
+  color: $tertiary;
+  display: block;
+  line-height: $line-height-20;
+}
+
+.txt_popup {
+  @include font-common-normal;
+  color: $primary;
+  display: inline-block;
+  padding: 25px 0;
+  position: relative;
+  width: 100%;
+  word-break: break-all;
+}

@@ -1,0 +1,107 @@
+#wrapper {
+  font-family: $font-main;
+  height: 100vh;
+  margin: 0 auto;
+  min-width: 1440px;
+  position: relative;
+  width: 100%;
+
+  .wrapper_type1 {
+    height: 100vh;
+  }
+}
+
+.cont_wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 1440px;
+  width: 100%;
+}
+
+// 로그인 이전
+.cont_main_type1 {
+  background-color: $white;
+  border: 1px solid $light-grey;
+  box-shadow: 27px 43px 43px -26px rgba($tertiary, 0.39);
+  margin: 100px auto;
+  max-width: 492px;
+  min-width: 360px;
+  overflow: hidden;
+  padding: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.wrap_contents_type1 {
+  margin-bottom: 60px;
+  margin-top: 100px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.inner_type1 {
+  margin: 0 auto;
+  position: relative;
+  width: 1280px;
+
+  &::after {
+    clear: both;
+    display: block;
+  }
+}
+
+// 로그인 이후
+.cont_main_type2 {
+  @include flexbox(end, center);
+  height: 100%;
+  min-width: 1440px;
+  width: 100%;
+}
+
+.wrap_contents_type2 {
+  @include flexbox(between, stretch);
+  height: calc(100% - 149px);
+  margin-bottom: 49px;
+  margin-top: 100px;
+  width: calc(100% - 280px);
+  word-break: break-all;
+}
+
+.inner_type2 {
+  margin: 0 auto;
+  min-width: 1520px;
+  overflow: auto;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+
+  &::after {
+    clear: both;
+    display: block;
+  }
+}
+
+.wrap_article {
+  @include column-flexbox(stretch, stretch);
+  margin-bottom: 80px;
+}
+
+// 컨텐츠 간 간격을 위한 클래스
+.wrap_data {
+  @include column-flexbox(stretch, stretch);
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.wrap_editor {
+  height: 100%;
+  position: relative;
+  width: 100%;
+
+  select {
+    margin-top: -10px;
+  }
+}

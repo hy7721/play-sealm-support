@@ -1,0 +1,128 @@
+button[class^='btn_'] {
+  @include font-common-bold;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.btn_comm {
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+// 전체 화면에서 가운데 정렬되는 버튼
+.wrap_button {
+  @include flexbox;
+  margin: 50px auto;
+  max-width: 1600px;
+  width: 100%;
+}
+
+// 테이블 밑에 붙는 버튼
+.wrap_button_type2 {
+  margin: 0 auto;
+  padding: 20px 0;
+  position: relative;
+  width: 100%;
+}
+
+// 로그인 이전 화면에서 쓰이는 버튼
+.btn_submit {
+  background-color: $primary;
+  color: $white;
+  line-height: $line-height-15;
+  margin-top: 50px;
+  padding: 20px;
+  width: 100%;
+
+  &:hover {
+    background-color: $blue;
+  }
+}
+
+.btn_gray {
+  background-color: $white;
+  border: 1px solid $border;
+  border-radius: 8px;
+  color: $primary;
+  height: 30px;
+  line-height: $line-height-26;
+  min-width: 100px;
+  padding: 0 10px;
+  width: auto;
+
+  &:hover {
+    background-color: $blue;
+    border: 1px solid $blue;
+    color: $white;
+  }
+}
+
+.btn_blue {
+  background-color: $white;
+  border-radius: 10px;
+  color: $blue;
+  height: 30px;
+  line-height: $line-height-26;
+  min-width: 100px;
+  padding: 0 10px;
+  width: auto;
+
+  &:hover {
+    background-color: $blue;
+    color: $white;
+  }
+}
+
+.btn_b_blue {
+  background-color: $blue;
+  border-radius: 10px;
+  color: $white;
+  height: 30px;
+  line-height: $line-height-26;
+  min-width: 100px;
+  padding: 0 10px;
+  width: auto;
+
+  &:hover {
+    background-color: $white;
+    border: 1px solid $border;
+    color: $blue;
+  }
+}
+
+// + button
+.btn_add,
+.btn_create {
+  background-color: $blue;
+  color: $white;
+  height: 30px;
+  line-height: $line-height-30;
+  padding: 0 10px;
+  width: 30px;
+}
+
+.btn_save,
+.btn_cancel,
+.btn_modify {
+  background-color: $blue;
+  color: $white;
+  height: 30px;
+  line-height: $line-height-30;
+  min-width: 80px;
+  padding: 0 10px;
+  width: auto;
+}
+
+// search button
+.btn_srch {
+  background-color: $blue;
+  border-radius: 8px;
+  color: $white;
+  height: 38px;
+  line-height: $line-height-26;
+  margin-left: 10px;
+  max-width: 100px;
+  padding: 5px 15px;
+  width: auto;
+}

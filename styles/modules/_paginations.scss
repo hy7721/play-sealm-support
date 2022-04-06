@@ -1,0 +1,58 @@
+.wrap_pagination {
+  @include flexbox;
+  margin: 50px auto;
+  max-width: 1600px;
+  width: 100%;
+
+  li {
+    &:hover,
+    &.active {
+      a {
+        background-color: $primary;
+        color: $white;
+        text-decoration: none;
+      }
+
+      &:hover {
+        background-color: $primary;
+        color: $white;
+        text-decoration: none;
+      }
+
+      a {
+        padding: 12px 16px;
+      }
+    }
+  }
+}
+
+.list_pagination,
+.list_pagination li,
+.list_pagination li a {
+  float: left;
+}
+
+.list_pagination {
+  li {
+    a {
+      height: 40px;
+      padding: 12px 16px;
+      width: 40px;
+    }
+  }
+}
+
+// pagination button
+.btn_prev,
+.btn_next {
+  height: 40px;
+  margin-right: 10px;
+  padding: 12px 16px;
+  width: 40px;
+
+  &:hover {
+    background-color: $primary;
+    color: $white;
+    text-decoration: none;
+  }
+}

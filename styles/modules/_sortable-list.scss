@@ -1,0 +1,20 @@
+.sortable_list {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 40px;
+  position: relative;
+  width: 100%;
+
+  li {
+    line-height: $line-height-40;
+    min-height: 40px;
+  }
+}
+
+.ui-state-highlight {
+  background-color: $sortable;
+  border: 0;
+  line-height: $line-height-40;
+  min-height: 40px;
+}

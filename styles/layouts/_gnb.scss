@@ -1,0 +1,90 @@
+.wrap_gnb {
+  display: flex;
+  height: 100px;
+  justify-content: flex-start;
+  width: 70%;
+}
+
+.list_gnb {
+  align-items: center;
+  color: $primary;
+  display: flex;
+  font-size: $font-size-16;
+  font-weight: 700;
+  height: 100px;
+  text-align: center;
+  width: 100%;
+
+  li {
+    padding: 0 25px;
+    text-align: center;
+
+    &:hover,
+    &.menu_active a,
+    &.menu_active .link_gnb {
+      color: $primary;
+      text-decoration: underline;
+    }
+  }
+
+  a:hover,
+  .link_gnb:hover {
+    color: $primary;
+    text-decoration: underline;
+  }
+}
+
+// account(user)
+.wrap_user {
+  @include flexbox(end, center);
+  height: auto;
+  position: relative;
+  width: 20%;
+
+  &:hover {
+    .list_setuser {
+      display: block;
+    }
+  }
+}
+
+.btn_user {
+  @include font-bigger-bold;
+  border: 0;
+  color: $primary;
+  cursor: pointer;
+  padding: 20px 0;
+  transition: all 0.2s ease;
+
+  &:hover {
+    .list_setuser {
+      display: block;
+    }
+  }
+}
+
+.list_setuser {
+  background-color: $light-grey;
+  box-shadow: 0 8px 16px 0 rgba($black, 0.2);
+  display: none;
+  height: auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 50px;
+  width: auto;
+  z-index: 1;
+
+  a,
+  .link_setuser {
+    @include font-common-normal;
+    color: $primary;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $border;
+    }
+  }
+}

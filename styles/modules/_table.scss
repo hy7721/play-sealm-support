@@ -1,0 +1,180 @@
+.list_table {
+  line-height: $line-height-40;
+  min-height: 40px;
+
+  .item_table {
+    float: left;
+    min-height: 40px;
+    text-align: center;
+    z-index: 11;
+  }
+
+  .item_table1 {
+    width: 75%;
+  }
+
+  .item_table2 {
+    text-align: center;
+    width: 15%;
+  }
+
+  .item_table3 {
+    text-align: center;
+    width: 10%;
+  }
+
+  strong {
+    font-weight: 700;
+  }
+}
+
+.title_table {
+  background-color: $bg-grey;
+  text-align: left;
+}
+
+.list_table_depth {
+  float: left;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+
+  li {
+    background-color: $bg-grey;
+    line-height: $line-height-40;
+    min-height: 40px;
+  }
+}
+
+.link_table {
+  color: $blue;
+
+  &:hover,
+  &:visited,
+  &:focus,
+  &:link {
+    color: $blue;
+    text-decoration: none;
+  }
+}
+
+.table_result {
+  border: 0;
+  display: none;
+  min-width: 100%;
+}
+
+.wrap_table {
+  border-bottom: 1px solid $grey;
+  border-collapse: collapse;
+  height: 100%;
+  line-height: $line-height-14;
+  text-align: center;
+  width: 100%;
+  word-break: break-all;
+
+  + .wrap_table {
+    margin-top: 40px;
+  }
+
+  strong {
+    font-weight: 700;
+  }
+
+  &.table_type2 {
+    margin: 0 auto;
+    max-width: 1240px;
+    position: relative;
+  }
+
+  thead {
+    background-color: $light-grey;
+    height: 100%;
+    min-height: 40px;
+
+    td {
+      @include font-common-normal;
+      border-collapse: collapse;
+      border-right: 1px solid $border;
+      color: $secondary;
+      font-weight: 700;
+      min-height: 40px;
+      padding: 10px 8px;
+
+      &:last-child {
+        border-collapse: collapse;
+        border-right: 1px solid $grey;
+      }
+    }
+  }
+
+  tbody {
+    td {
+      @include font-common-normal;
+      min-height: 40px;
+      padding: 10px 8px;
+    }
+  }
+
+  tfoot {
+    td {
+      @include font-common-normal;
+      min-height: 40px;
+      padding: 10px 8px;
+    }
+  }
+
+  td {
+    border: 1px solid $grey;
+    border-collapse: collapse;
+    line-height: $line-height-15;
+
+    label {
+      margin-top: 0;
+      width: 100%;
+    }
+  }
+
+  select {
+    width: 100%;
+  }
+
+  input,
+  input + label {
+    margin-top: 0;
+  }
+}
+
+.table_type1 {
+  @include font-common-normal;
+  border: 1px solid $grey;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+.wrap_subtit_table,
+.wrap_cont_table {
+  @include flexbox(between, center);
+  width: 100%;
+}
+
+.wrap_answer {
+  display: inline-block;
+  width: 100%;
+
+  strong {
+    border-bottom: 1px dotted $border;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+
+  p {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+}

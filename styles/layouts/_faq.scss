@@ -1,0 +1,41 @@
+.tit_faq {
+  display: inline-block;
+  font-weight: 700;
+  margin-left: 30px;
+  min-height: 40px;
+  text-align: left;
+  z-index: 1;
+
+  &::before {
+    background: $blue;
+    color: $white;
+    content: '\002B';
+    height: 13px;
+    left: 10px;
+    line-height: 0.9;
+    margin-top: 14px;
+    position: absolute;
+    text-align: center;
+    width: 13px;
+  }
+}
+
+.txt_faq {
+  display: inline-block;
+  line-height: $line-height-40;
+  margin-left: 30px;
+  min-height: 40px;
+  text-align: left;
+
+  &::before {
+    color: $primary;
+    content: '\2012';
+    height: 13px;
+    left: 10px;
+    line-height: 0.9;
+    margin-top: 14px;
+    position: absolute;
+    text-align: center;
+    width: 13px;
+  }
+}

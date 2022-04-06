@@ -1,0 +1,21 @@
+@mixin font-common-normal {
+  font-family: $font-main;
+  font-size: $font-size-12;
+  font-weight: 400;
+}
+
+@mixin font-common-bold {
+  font-family: $font-main;
+  font-size: $font-size-12;
+  font-weight: 700;
+}
+
+@mixin font-bigger-normal {
+  font-size: $font-size-14;
+  font-weight: 400;
+}
+
+@mixin font-bigger-bold {
+  font-size: $font-size-14;
+  font-weight: 700;
+}

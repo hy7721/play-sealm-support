@@ -1,0 +1,46 @@
+.ico_comm {
+  color: $primary;
+  display: inline-block;
+  font-size: $font-size-14;
+}
+
+// aside 영역 리스트 아이콘
+.ico_arrow {
+  color: $primary;
+  display: block;
+  float: right;
+  font-size: $font-size-18;
+  height: 17px;
+  margin-top: -4px;
+  width: auto;
+}
+
+// header 영역 > user
+.ico_setting {
+  background-image: url('../images/ico_setting.png') center center no-repeat;
+  float: right;
+  height: 16px;
+  margin-left: 10px;
+  margin-top: 2px;
+  width: 15px;
+}
+
+.ico_dash {
+  color: $primary;
+  font-size: $font-size-14;
+  margin: 0 5px;
+  text-align: center;
+}
+
+.ico_align {
+  @include font-bigger-normal;
+  color: $secondary;
+  float: right;
+  padding-right: 5px;
+}
+
+.ico_answer {
+  display: inline-block;
+  font-size: $font-size-14;
+  margin-right: 5px;
+}

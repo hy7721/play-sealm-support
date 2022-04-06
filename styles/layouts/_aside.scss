@@ -1,0 +1,77 @@
+.wrap_aside {
+  background-color: $white;
+  border-right: 1px solid $grey;
+  color: $primary;
+  display: flex;
+  height: calc(100% - 149px);
+  justify-content: space-between;
+  left: 0;
+  overflow-y: auto;
+  position: fixed;
+  top: 100px;
+  width: 280px;
+  z-index: 100;
+}
+
+.wrap_nav {
+  height: 100%;
+  width: 100%;
+}
+
+.wrap_snb {
+  border-bottom: 1px solid $grey;
+  font-size: $font-size-12;
+
+  li + li {
+    border-top: 1px solid $grey;
+  }
+}
+
+.link_snb {
+  padding: 12px 12px 12px 22px;
+  display: block;
+  color: $primary;
+}
+
+.link_snb,
+.list_snb > li a,
+.link_submenu,
+.list_submenu > li a {
+  display: block;
+  color: $primary;
+}
+
+.list_snb > li a {
+  padding: 12px 12px 12px 22px;
+}
+
+.link_submenu,
+.list_submenu > li a {
+  padding: 8px 8px 8px 22px;
+}
+
+.link_snb {
+  font-weight: 700;
+  background-color: $light-grey;
+}
+
+.list_snb:hover a.link_snb,
+.link_snb:hover,
+.list_snb:hover .ico_arrow,
+.link_snb:hover .ico_arrow,
+.list_snb.menu_active a.link_snb,
+.list_snb.menu_active .ico_arrow {
+  color: $white;
+  background-color: $blue;
+}
+
+.link_snb:hover,
+.list_snb > li:hover a,
+.list_snb > li a:hover,
+.link_submenu:hover,
+.list_submenu:hover a,
+.list_submenu a:hover .list_sub.menu_active a,
+.list_submenu.menu_active a {
+  font-weight: bold;
+  color: $blue;
+}

@@ -288,7 +288,7 @@ button.ui-button::-moz-focus-inner {
 }
 
 .ui-checkboxradio-label .ui-icon-background {
-  border: none;
+  border: 0;
   border-radius: 0.12em;
   -webkit-box-shadow: inset 1px 1px 1px #ccc;
   box-shadow: inset 1px 1px 1px #ccc;
@@ -298,7 +298,7 @@ button.ui-button::-moz-focus-inner {
   overflow: visible;
   width: 16px;
   height: 16px;
-  border: none;
+  border: 0;
   border-radius: 1em;
 }
 
@@ -885,7 +885,7 @@ button.ui-button::-moz-focus-inner {
   margin-right: 2em;
   margin-left: 0.4em;
   padding: 0.222em 0;
-  border: none;
+  border: 0;
   vertical-align: middle;
   color: inherit;
   background: none;

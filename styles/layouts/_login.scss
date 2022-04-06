@@ -1,0 +1,32 @@
+// 로그인 페이지의 계정등록 / ChangePassword
+.txt_link {
+  @include font-bigger-normal;
+  color: $blue;
+  display: inline-block;
+}
+
+// 로그인 페이지
+.txt_assist {
+  display: block;
+  width: calc(100% - 40px);
+  max-width: 392px;
+  margin: 15px;
+  font-size: 12px;
+  color: $placeholder;
+}
+
+// 계정 신청 완료 페이지
+.txt_warn {
+  @include font-bigger-normal;
+  color: $red;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+// 로그인 이전 설명부분
+.txt_dsc {
+  @include font-common-normal;
+  color: $tertiary;
+  display: block;
+  line-height: $line-height-20;
+}
