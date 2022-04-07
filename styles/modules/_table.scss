@@ -40,9 +40,12 @@
   width: 100%;
 
   li {
-    background-color: $bg-grey;
     line-height: $line-height-40;
     min-height: 40px;
+
+    &:nth-child(2n-1) {
+      background-color: $bg-light-grey;
+    }
   }
 }
 
